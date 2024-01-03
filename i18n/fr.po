@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 13:00+0000\n"
-"PO-Revision-Date: 2024-01-03 13:00+0000\n"
+"POT-Creation-Date: 2024-01-03 21:16+0000\n"
+"PO-Revision-Date: 2024-01-03 21:16+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,137 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: sale_order_report_sealed
+#: model:ir.actions.report,print_report_name:sale_order_report_sealed.action_report_saleorder_with_seal
+msgid ""
+"(object.state in ('draft', 'sent') and 'Sealed Quotation - %s' % "
+"(object.name)) or 'Sealed Order - %s' % (object.name)"
+msgstr ""
+"(object.state in ('draft', 'sent') and 'Devis signé et cacheté- %s' % (object.name)) or "
+"'Commande signée et cachetée- %s' % (object.name)"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</span>\n"
+"                            <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Montant</span>\n"
+"                                <span groups=\"account.group_show_line_subtotals_tax_included\">Prix total</span>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<span>Disc.%</span>"
+msgstr "<span>Rem.(%)</span>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<span>Pro-Forma Invoice # </span>"
+msgstr "<span>Facture pro-forma n° </span>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Sous-total</strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong>Expiration:</strong>"
+msgstr "<strong>Echéance:</strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr "<strong>Remarque sur le régime fiscal :</strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong>Order Date:</strong>"
+msgstr "<strong>Date de commande :</strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong>Quotation Date:</strong>"
+msgstr "<strong>Date du devis :</strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>Vendeur :</strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong>Shipping Address:</strong>"
+msgstr "<strong>Adresse de livraison:</strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong>Signature</strong>"
+msgstr "<strong>Signature</strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "<strong>Your Reference:</strong>"
+msgstr "<strong>Votre référence : </strong>"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "Description"
+msgstr "Description"
+
+#. module: sale_order_report_sealed
+#: model:ir.model.fields,field_description:sale_order_report_sealed.field_sale_order__document_seal
+msgid "Document Seal"
+msgstr "Cachet du document"
+
+#. module: sale_order_report_sealed
 #: model:ir.model.fields,field_description:sale_order_report_sealed.field_res_users__document_signature
 msgid "Document Signature"
 msgstr "Signature"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "Invoicing Address:"
+msgstr "Adresse de facturation:"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "Invoicing and Shipping Address:"
+msgstr "Adresse de facturation et d'expédition:"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "Order #"
+msgstr "Commande n°"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "Quotation #"
+msgstr "Devis N°"
+
+#. module: sale_order_report_sealed
+#: model:ir.model,name:sale_order_report_sealed.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: sale_order_report_sealed
+#: model:ir.actions.report,name:sale_order_report_sealed.action_report_saleorder_with_seal
+msgid "Sealed Quotation / Order"
+msgstr "Devis / Commande signé(e) et cacheté(e)"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "Taxes"
+msgstr "Taxes"
+
+#. module: sale_order_report_sealed
+#: model_terms:ir.ui.view,arch_db:sale_order_report_sealed.report_saleorder_document_with_seal
+msgid "Unit Price"
+msgstr "Prix unitaire"
 
 #. module: sale_order_report_sealed
 #: model:ir.model,name:sale_order_report_sealed.model_res_users
