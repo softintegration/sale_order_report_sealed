@@ -170,15 +170,15 @@
                     <strong>Signature</strong>
                 </div>
                 <div class="offset-8">
-                    <t t-if="doc.document_seal and doc.user_id.document_signature">
-                        <t t-set="bg_image" t-value="image_data_uri(doc.document_seal)"/>
+                    <t t-if="doc.company_id._get_seal(doc._name) and doc.user_id.document_signature">
+                        <t t-set="bg_image" t-value="image_data_uri(doc.company_id._get_seal(doc._name))"/>
                         <img t-att-src="image_data_uri(doc.user_id.document_signature)"
                         t-att-style="'background-image:url(' + bg_image + ');
                         background-repeat: no-repeat;
                         background-size:cover;
                         height: 5cm; width: 5cm;'"/>
                     </t>
-                    <t t-if="not doc.document_seal and doc.user_id.document_signature">
+                    <t t-if="not doc.company_id._get_seal(doc._name) and doc.user_id.document_signature">
                         <img t-att-src="image_data_uri(doc.user_id.document_signature)"
                         t-att-style="'height: 5cm; width: 5cm;'"/>
                     </t>
