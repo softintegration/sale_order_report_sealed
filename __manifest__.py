@@ -2,7 +2,7 @@
 
 {
     'name': 'Sale order signed and sealed',
-    'version': '1.0.1.4',
+    'version': '1.0.1.5',
     'author': 'Soft-integration',
     'category': 'Sale',
     'summary': 'Sale order signed and sealed',

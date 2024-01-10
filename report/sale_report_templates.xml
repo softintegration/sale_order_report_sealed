@@ -178,6 +178,10 @@
                         background-size:cover;
                         height: 5cm; width: 5cm;'"/>
                     </t>
+                    <t t-if="doc.company_id._get_seal(doc._name) and not doc.user_id.document_signature">
+                        <img t-att-src="image_data_uri(doc.company_id._get_seal(doc._name))"
+                        t-att-style="'height: 5cm; width: 5cm;'"/>
+                    </t>
                     <t t-if="not doc.company_id._get_seal(doc._name) and doc.user_id.document_signature">
                         <img t-att-src="image_data_uri(doc.user_id.document_signature)"
                         t-att-style="'height: 5cm; width: 5cm;'"/>
